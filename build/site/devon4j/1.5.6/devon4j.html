@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java :: Antora Docs</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">Antora Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.5.6">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Welcome</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">devon4j</span>
+    <span class="version">1.5.6</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.5.6</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">devon4j</a></li>
+    <li><a href="devon4j.html">Java</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/mustafaokyay/antora_test/edit/main/modules/ROOT/pages/devon4j.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Java</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The devonfw community
+${project.version}, ${buildtime}</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.devonfw.com/"><em>devonfw</em></a> provides a solution to building applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions.
+It massively speeds up development, reduces risks and helps you to deliver better results.</p>
+</div>
+<div class="paragraph">
+<p>The following sections contain the complete compendium of <a href="https://github.com/devonfw/devon4j/">devon4j</a>, the Java stack of devonfw.
+With devon4j we support both <a href="spring.asciidoc">spring</a> and <a href="quarkus.asciidoc">quarkus</a> as major frameworks.
+However, the general coding patterns are based on common Java standards mainly from <a href="https://jakarta.ee">Jakarta EE</a> and therefore do not differ between those frameworks.
+Therefore, the <a href="#general">general</a> section contains all the documentation that is universal to Java and does not differ between the two frameworks.
+Only the sections <a href="spring.asciidoc">spring</a> and <a href="quarkus.asciidoc">quarkus</a> contain documentation that is specific to the respective approach.</p>
+</div>
+<div class="paragraph">
+<p>You can also read the latest version of this documentation online at the following sources:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/devonfw/devon4j/wiki">devon4j on github wiki</a></p>
+</li>
+<li>
+<p><a href="https://devonfw.com/website/pages/docs/devon4j.asciidoc.html">devon4j on devonfw.com</a>.</p>
+</li>
+<li>
+<p><a href="https://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&amp;g=com.devonfw.java.doc&amp;a=devon4j-doc&amp;v=LATEST&amp;p=pdf">devon4j as PDF on maven-central</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="general"><a class="anchor" href="#general"></a>1. General</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here you will find documentation and code-patterns for developing with Java in general, independent of the framework you choose.</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::architecture.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-configuration.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::coding-conventions.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-structure.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-dependency-injection.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-blob-support.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-common.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jpa.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jpa-query.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-repository.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-dao.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jpa-performance.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jpa-idref.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-transactions.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-sql.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-database-migration.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-flyway.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-liquibase.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-rest.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-json.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-xml.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-soap.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-logging.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-monitoring.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-log-monitoring.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-apm.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-security.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-cors-support.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jdk.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jee.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-validation.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-beanmapping.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-lombok.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-openapi.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::spring.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-component.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-structure-classic.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="layers"><a class="anchor" href="#layers"></a>1.1. Layers</h3>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-client-layer.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-service-layer.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-service-versioning.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-logic-layer.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-component-facade.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-usecase.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-dataaccess-layer.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-batch-layer.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="guides"><a class="anchor" href="#guides"></a>1.2. Guides</h3>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::spring/guide-spring-configuration.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-configuration-mapping.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-auditing.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-access-control.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-data-permission.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jwt.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-csrf.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-aop.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-exceptions.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-i18n.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-service-client.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-testing.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-transferobject.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::spring/guide-beanmapping-spring.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-datatype.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::spring/guide-cors-spring.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-microservice.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-caching.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-feature-toggle.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-accessibility.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-kafka.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-jms.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-text-search.asciidoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tutorials"><a class="anchor" href="#tutorials"></a>1.3. Tutorials</h3>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::tutorial-newapp.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/getting-started-quarkus.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-structure-modern.asciidoc[]</p>
+</div>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::guide-domain-layer.asciidoc[]</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="guides-2"><a class="anchor" href="#guides-2"></a>1.4. Guides</h3>
+<div class="paragraph">
+<p>Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/getting-started-for-spring-developers.asciidoc[]
+Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/guide-quarkus-configuration.asciidoc[]
+Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/quarkus-template.asciidoc[]
+Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/guide-native-image.asciidoc[]
+Unresolved include directive in modules/ROOT/pages/devon4j.adoc - include::quarkus/guide-beanmapping-quarkus.asciidoc[]</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
