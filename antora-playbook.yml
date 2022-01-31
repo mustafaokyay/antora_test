@@ -1,6 +1,6 @@
 site:
   title: Antora Docs
-  start_page: index.adoc
+  start_page: component-b::index.adoc
 content:
   sources:
   - url: https://github.com/mustafaokyay/antora_test.git
