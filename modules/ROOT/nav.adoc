@@ -1,2 +1,2 @@
 * Welcome
-* xref:architecture.adoc[Architecture]
+* xref:devon4j.adoc[devon4j]
