@@ -1,3 +1,4 @@
 * Welcome
 * xref:devon4j.adoc[devon4j]
 * xref:guide-access-control.adoc[guide-access-control]
+* xref:guide-commmon.asciidoc[guide-commmon]
