@@ -1,0 +1,22 @@
+== Antora Versioning Methods
+Antora basically has three different solutions for versioning which can be summarized as follows:
+
+=== Folders
+If we were to use version folders to store documentation versions all in a single branch, then we would have to explicitly copy all the files in a version to a new folder to create a new version. In doing so, we would no longer be able to rely on git to compare, manage, and merge different versions of the same document.
+
+This method does not meet our requirements!
+
+=== Tags
+If we were to use tags to store documentation versions, then we would not be able to update the documentation once the tag was made, effectively freezing the documentation from receiving updates.
+
+This method does not meet our requirements!
+
+=== Branches
+Using this method, you store each documentation version in a branch of a git repository, just like you use branches to store version lines of a software project. 
+
+You then set the https://docs.antora.org/antora/latest/playbook/content-branches/[branches key] on the content source to tell Antora which branches to use. The name of the branch itself does not matter. It is  the https://docs.antora.org/antora/latest/component-version-key/[version key] in the  https://docs.antora.org/antora/latest/component-version-descriptor/[component version descriptor] or playbook that determines the version.
+Branches are ideally suited for managing multiple versions of the same content.
+
+== Conclusion
+Using Branches for versioning seems to offer the only possible solution for our needs. By creating a new branch from an existing reference in the repository to hold a new version, the repository only stores what is changed since that branch point. And that branch can receive updates at any time. That is what git does best.
+Branches map well to the system of references provided by git and are flexible enough to allow documentation to be updated freely.    
